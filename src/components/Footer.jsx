@@ -7,7 +7,7 @@ const Footer = () => {
         
         {/* Column 1: Brand Info */}
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-900">Lirena</h2>
+          <h2 className="text-xl font-semibold text-gray-900">Lilly Massage Bangkok.</h2>
           <p className="text-sm">
             SPA & Wellness Center
           </p>
@@ -89,7 +89,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="mt-10 border-t border-gray-200 pt-6 text-center text-sm text-gray-600">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p>Copyright © 2024 Lirena. All Rights Reserved.</p>
+          <p>Copyright © 2024 Lilly Massage. All Rights Reserved.</p>
           <ul className="flex space-x-4 mt-4 md:mt-0">
             <li><a href="#!" className="hover:text-gray-900">Home</a></li>
             <li><a href="#!" className="hover:text-gray-900">About</a></li>

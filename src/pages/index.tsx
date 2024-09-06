@@ -11,16 +11,18 @@ import Header from "@/components/Header.jsx"
 import StatsSection from "@/components/StatsSection.jsx"
 import ServicesSection from "@/components/ServicesSection.jsx"
 import PromoBanner from "@/components/PromoBanner.jsx"
+import HeroSection1 from "@/components/HeroSection1.jsx"
 export default function Home() {
   return (
     <main>
       <Navbar />
-      <Header />
+      <HeroSection1 />
       <ServicesSection />
       <StatsSection />
+      <Header />
       <OurHistory />
-      <PromoBanner />
       <WhyUs />
+      <PromoBanner />
       <Gallery />
       <WellnessTherapy />
       <Footer />

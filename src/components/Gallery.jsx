@@ -6,7 +6,7 @@ const Gallery = () => {
       <h2 className="cormorant-font text-4xl font-bold text-red-500 mb-5">
         Enjoy the difference
       </h2>
-      <p className="text-gray-600 mb-10 montserrat-font">
+      <p className="montserrat-font text-gray-600 mb-10 montserrat-font">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </p>

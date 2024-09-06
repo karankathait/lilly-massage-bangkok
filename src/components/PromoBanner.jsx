@@ -15,7 +15,7 @@ const PromoBanner = () => {
           <p className="text-gray-500 mt-4 max-w-md">
             Porta semper lacus cursus, feugiat primis ultrice ligula risus auctor an tempus feugiat dolor undo lacinia cubilia curae.
           </p>
-          <button className="mt-6 bg-pink-500 text-white py-3 px-6 rounded-lg hover:bg-pink-600 transition">
+          <button className="mt-6 bg-[#F48380] text-white py-3 px-6 rounded-lg hover:bg-pink-600 transition">
             Book Now
           </button>
         </div>
