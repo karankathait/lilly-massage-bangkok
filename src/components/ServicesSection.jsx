@@ -12,10 +12,9 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-gray-50 dark:bg-black">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="cormorant-font text-2xl   text-[#F48380] font-semibold uppercase mb-2">Services</h2>
-        <h3 className="text-4xl font-bold text-gray-900 mb-6">The best for you</h3>
+        <h2 className="josefin-slab-font text-4xl text-[#EFC481] mb-4">The Best Services for you</h2>
         <p className="text-gray-500 mb-10">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>

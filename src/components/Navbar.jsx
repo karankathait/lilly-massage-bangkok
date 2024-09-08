@@ -1,94 +1,138 @@
-import React from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import React, { useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import {
+  FaFacebook,
+  FaWhatsapp,
+  FaInstagram,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
+import DarkModeToggle from "@/components/DarkModeToogle.jsx";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(true); // Default to closed
   const router = useRouter();
-  
-  // Function to check if a link is active
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   const isActive = (path) => router.pathname === path;
 
   return (
-    <header className="bg-[#F48380]">
-      {/* Top bar with location and contact */}
-      <div className="flex justify-between items-center px-6 py-2 text-white text-sm">
-        <div>
-          <span className="mr-4">
-            <i className="fas fa-map-marker-alt"></i> No. 12, Wales street, Australia.
-          </span>
-          <span>
-            <i className="fas fa-phone"></i> + (528) 456-7592
-          </span>
+    <nav className="absolute top-0 left-0 w-full z-10 bg-black bg-opacity-50">
+      <div className="max-w-6xl mx-auto h-20 flex items-center justify-between px-8 py-4">
+        {/* Logo */}
+        <div className="text-2xl font-semibold text-[#DEB678]">
+          LILLY MASSAGE
         </div>
-        <div className="flex space-x-4">
-          <a href="#" className="hover:text-gray-800">
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a href="#" className="hover:text-gray-800">
-            <i className="fab fa-xing"></i>
-          </a>
-          <a href="#" className="hover:text-gray-800">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="#" className="hover:text-gray-800">
-            <i className="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
 
-      {/* Main Navbar */}
-      <nav className="bg-white shadow-lg">
-        <div className="container mx-auto flex justify-between items-center px-6 py-6">
-          <Link href="/" className="text-4xl font-serif font-bold text-slate-800">
-            Lilly Massage<span className="text-[#F48380]">.</span>
-          </Link>
-          <ul className="flex space-x-8 text-lg text-slate-800 font-medium">
-            <li>
-              <Link href="/" passHref>
-                <p className={`montserrat-font font-semibold text-[16px] ${isActive('/') ? 'text-[#F48380]' : 'hover:text-[#F48380]'}`}>
-                  Home
-                </p>
+        {/* Hamburger Icon (Mobile) */}
+        <div
+          className={`md:hidden text-white text-3xl cursor-pointer transform transition-transform duration-300 ${
+            isOpen ? "rotate-90" : "rotate-0"
+          }`}
+          onClick={toggleMenu}
+        >
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </div>
+
+        {/* Nav Links */}
+        <div
+          className={`md:flex space-x-6 items-center absolute md:relative md:top-0 top-16 left-0 w-full md:w-auto bg-[#00000080] bg-opacity-90 md:bg-transparent overflow-hidden transition-all duration-500 ease-in-out transform ${
+            isOpen
+              ? "max-h-screen opacity-100"
+              : "max-h-0 opacity-0 md:opacity-100"
+          }`}
+        >
+          <ul className="josefin-sans-font flex flex-col md:flex-row md:space-x-6 p-6 md:p-0 space-y-4 md:space-y-0">
+            <li className="transition-colors duration-300">
+              <Link
+                href="/"
+                className={`${
+                  isActive("/")
+                    ? "text-[#EFC481]"
+                    : "text-white hover:text-[#DEB678]"
+                }`}
+              >
+                Home
               </Link>
             </li>
-            <li>
-              <Link href="/about" passHref>
-                <p className={`montserrat-font font-semibold text-[16px] ${isActive('/about') ? 'text-[#F48380]' : 'hover:text-[#F48380]'}`}>
-                  About Us
-                </p>
+            
+            <li className="transition-colors duration-300">
+              <Link
+                href="/about"
+                className={`${
+                  isActive("/about")
+                    ? "text-[#EFC481]"
+                    : "text-white hover:text-[#DEB678]"
+                }`}
+              >
+                About Us
               </Link>
             </li>
-            <li>
-              <Link href="/services" passHref>
-                <p className={`montserrat-font font-semibold text-[16px] ${isActive('/services') ? 'text-[#F48380]' : 'hover:text-[#F48380]'}`}>
-                  Our Services
-                </p>
+
+            <li className="transition-colors duration-300">
+              <Link
+                href="/massage-price"
+                className={`${
+                  isActive("/massage-price")
+                    ? "text-[#EFC481]"
+                    : "text-white hover:text-[#DEB678]"
+                }`}
+              >
+                Our Pricing
               </Link>
             </li>
-            <li>
-              <Link href="/therapists" passHref>
-                <p className={`montserrat-font font-semibold text-[16px] ${isActive('/therapists') ? 'text-[#F48380]' : 'hover:text-[#F48380]'}`}>
-                  Our Therapists
-                </p>
+            <li className="transition-colors duration-300">
+              <Link
+                href="/our-therapists"
+                className={`${
+                  isActive("/our-therapists")
+                    ? "text-[#EFC481]"
+                    : "text-white hover:text-[#DEB678]"
+                }`}
+              >
+                Our Therapists
               </Link>
             </li>
-            <li>
-              <Link href="/contact" passHref>
-                <p className={`montserrat-font font-semibold text-[16px] ${isActive('/contact') ? 'text-[#F48380]' : 'hover:text-[#F48380]'}`}>
-                  Contact Us
-                </p>
+            
+            <li className="transition-colors duration-300">
+              <Link
+                href="/contact"
+                className={`${
+                  isActive("/contact")
+                    ? "text-[#EFC481]"
+                    : "text-white hover:text-[#DEB678]"
+                }`}
+              >
+                Contact
               </Link>
             </li>
           </ul>
-          <div className="flex items-center space-x-4">
-            <Link href="/book" passHref>
-              <p className="border border-red-300 text-red-300 px-4 py-2 hover:bg-red-300 hover:text-white transition duration-300 ease-in-out">
-                Book Now
-              </p>
-            </Link>
-          </div>
         </div>
-      </nav>
-    </header>
+
+        {/* Social Icons */}
+        <div
+          className={`flex items-center space-x-4 md:static absolute md:top-0 right-8 md:right-0 top-20 transition-all duration-500 ease-in-out transform ${
+            isOpen ? "opacity-100" : "opacity-0 md:opacity-100"
+          }`}
+        >
+          <Link href="#">
+            <FaFacebook className="text-[#EFC481] text-xl" />
+          </Link>
+          <Link href="#">
+            <FaWhatsapp className="text-[#EFC481] text-xl" />
+          </Link>
+          <Link href="#">
+            <FaInstagram className="text-[#EFC481] text-xl" />
+          </Link>
+
+          <DarkModeToggle />
+        </div>
+      </div>
+    </nav>
   );
 };
 

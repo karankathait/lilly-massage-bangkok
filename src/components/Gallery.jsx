@@ -2,16 +2,17 @@
 
 const Gallery = () => {
   return (
-    <div className="max-w-7xl mx-auto text-center p-10">
-      <h2 className="cormorant-font text-4xl font-bold text-red-500 mb-5">
+    <div className="bg-white dark:bg-black">
+      <div className="max-w-6xl mx-auto text-center">
+      <h2 className="josefin-slab-font text-4xl font-bold text-[#EFC481] mb-5">
         Enjoy the difference
       </h2>
-      <p className="montserrat-font text-gray-600 mb-10 montserrat-font">
+      <p className="josefin-sans-font text-gray-600 dark:text-white mb-10">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <div className="flex gap-8">
-        <div className="flex flex-col gap-8">
+      <div className="flex gap-4  md:gap-8">
+        <div className="flex flex-col gap-4  md:gap-8">
           <img
             src="/gallery-1.jpg"
             alt="Spa image 1"
@@ -23,7 +24,7 @@ const Gallery = () => {
             className="w-full h-auto rounded-lg"
           />
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4  md:gap-8">
           <img
             src="/gallery-2.jpg"
             alt="Spa image 1"
@@ -36,7 +37,7 @@ const Gallery = () => {
           />
         </div>
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4  md:gap-8">
           <img
             src="/gallery-3.jpg"
             alt="Spa image 1"
@@ -49,6 +50,7 @@ const Gallery = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };

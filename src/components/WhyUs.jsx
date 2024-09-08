@@ -3,74 +3,110 @@ import { TiTick } from "react-icons/ti";
 
 const WHyUs = () => {
   return (
-    <section className="bg-white">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
+    <section className="bg-white dark:bg-black py-8">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-center">
         {/* Image Section */}
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 overflow-hidden">
           <img
-            src="flower.jpg"
+            src="why-us-2.jpg"
             alt="Philosophy Image"
-            className="w-full h-auto object-cover"
+            className="object-cover rounded-xl border border-[#EFC481] border-opacity-50"
           />
         </div>
 
         {/* Text Section */}
         <div className="lg:w-1/2">
-          <h2 className="cormorant-font text-5xl text-[#F48380] font-semibold mb-8">
-          MASSAGE SERVICES
+          <h2 className="josefin-slab-font text-[#EFC481] text-4xl font-semibold mb-4">
+            Why Us
           </h2>
-          <p className="montserrat-font text-xl text-gray-600 mb-8">
-            At The Lilly Massage Bangkok We service in the Bangkok area by
-            professional therapists who have been well and efficiently trained.
-            With the readiness for service, you can be confident in the
-            convenience, cleanliness, and safety of the accommodation room in
-            the hotel, condominium, residence, or your house. We will relieve
-            you from the exhausting work without moving from your house or
-            living place.
+          <p className="roboto-condensed-font text-slate-800 dark:text-slate-200 mb-5 text-lg">
+            At Lilly Massage, we offer a personalized and convenient massage
+            experience tailored to your unique needs. Our team of expert
+            therapists brings years of experience to ensure you receive
+            top-quality care right in the comfort of your home. We provide a
+            variety of treatments designed to enhance your well-being, from deep
+            tissue to relaxation massages. Our commitment to excellence and
+            client satisfaction means you can trust us to deliver exceptional
+            service every time.
           </p>
-          
 
-          <div className="grid grid-cols-2 gap-4  text-gray-600 mb-6">
+          <div className="roboto-condensed-font grid grid-cols-2 gap-4 text-gray-600 dark:text-slate-200 mb-6 text-lg">
             <ul className="space-y-2">
               <li className="flex items-center">
-                <span className="text-[#F48380] mr-2"><TiTick /></span>
-                Te est consul graeco.
+                <span className="text-[#EFC481] mr-2">
+                  <TiTick />
+                </span>
+                Personalized Care.
               </li>
               <li className="flex items-center">
-                <span className="text-[#F48380] mr-2"><TiTick /></span>
-                At inermis praesent usu.
+                <span className="text-[#EFC481] mr-2">
+                  <TiTick />
+                </span>
+                Expert Therapists.
               </li>
               <li className="flex items-center">
-                <span className="text-[#F48380] mr-2"><TiTick /></span>
-                Movet oblique probatus.
+                <span className="text-[#EFC481] mr-2">
+                  <TiTick />
+                </span>
+                Convenience.
+              </li>
+              <li className="flex items-center">
+                <span className="text-[#EFC481] mr-2">
+                  <TiTick />
+                </span>
+                Privacy.
+              </li>
+              <li className="flex items-center">
+                <span className="text-[#EFC481] mr-2">
+                  <TiTick />
+                </span>
+                Time-saving.
               </li>
             </ul>
             <ul className="space-y-2">
               <li className="flex items-center">
-                <span className="text-[#F48380] mr-2"><TiTick /></span>
-                Te est consul graeco.
+                <span className="text-[#EFC481] mr-2">
+                  <TiTick />
+                </span>
+                Comprehensive Wellness.
               </li>
               <li className="flex items-center">
-                <span className="text-[#F48380] mr-2"><TiTick /></span>
-                At inermis praesent usu.
+                <span className="text-[#EFC481] mr-2">
+                  <TiTick />
+                </span>
+                Commitment to Quality.
               </li>
               <li className="flex items-center">
-                <span className="text-[#F48380] mr-2"><TiTick /></span>
-                Movet oblique probatus.
+                <span className="text-[#EFC481] mr-2">
+                  <TiTick />
+                </span>
+                Exceptional Customer Service.
+              </li>
+              <li className="flex items-center">
+                <span className="text-[#EFC481] mr-2">
+                  <TiTick />
+                </span>
+                Flexibility.
+              </li>
+              <li className="flex items-center">
+                <span className="text-[#EFC481] mr-2">
+                  <TiTick />
+                </span>
+                Relaxation.
               </li>
             </ul>
           </div>
 
           <div className="flex items-center space-x-4">
-            <button className="bg-[#F48380] text-white px-6 py-2 rounded-full hover:bg-pink-600 transition">
-              Read More
+            <button className="bg-[#DEB678] text-white dark:bg-[#1E1A12] border border-[#DEB678] px-6 py-3  dark:text-[#DEB678] font-medium hover:bg-yellow-700">
+              See All Therapists
             </button>
-            <a
+            {/* <a
               href="#!"
-              className="text-[#F48380] font-semibold hover:underline flex items-center"
+              className="text-[#EFC481] font-semibold hover:underline flex items-center"
             >
-              Contact Us <span className="ml-2">→</span>
-            </a>
+              Contact Us 
+            </a> */}
           </div>
         </div>
       </div>
