@@ -3,52 +3,52 @@ export const therapists = [
     {
       id: 1,
       name: "Alice Johnson",
-      image: "/therapists/alice.jpg",
+      image: "/therepist.png",
     },
     {
       id: 2,
       name: "John Doe",
-      image: "/therapists/john.jpg",
+      image: "/therepist.png",
     },
     {
       id: 3,
       name: "Mary Smith",
-      image: "/therapists/mary.jpg",
+      image: "/therepist.png",
     },
     {
       id: 4,
       name: "Michael Brown",
-      image: "/therapists/michael.jpg",
+      image: "/therepist.png",
     },
     {
       id: 5,
       name: "Sarah Davis",
-      image: "/therapists/sarah.jpg",
+      image: "/therepist.png",
     },
     {
       id: 6,
       name: "Emma Wilson",
-      image: "/therapists/emma.jpg",
+      image: "/therepist.png",
     },
     {
       id: 7,
       name: "Daniel Taylor",
-      image: "/therapists/daniel.jpg",
+      image: "/therepist.png",
     },
     {
       id: 8,
       name: "Olivia White",
-      image: "/therapists/olivia.jpg",
+      image: "/therepist.png",
     },
     {
       id: 9,
       name: "James Miller",
-      image: "/therapists/james.jpg",
+      image: "/therepist.png",
     },
     {
       id: 10,
       name: "Sophia Lee",
-      image: "/therapists/sophia.jpg",
+      image: "/therepist.png",
     },
   ];
   

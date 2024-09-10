@@ -6,35 +6,41 @@ const TherepistList = () => {
   const router = useRouter();
 
   const handleBooking = (therapist) => {
-    // Pass the therapist's name and id to the booking page
     router.push(`/booking?therapist=${therapist.name}&id=${therapist.id}`);
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
-      {therapists.map((therapist) => (
-        <div
-          key={therapist.id}
-          className="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden"
-        >
-          <img
-            src={therapist.image}
-            alt={therapist.name}
-            className="w-full h-48 object-cover"
-          />
-          <div className="p-4 text-center">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-              {therapist.name}
-            </h2>
-            <button
-              onClick={() => handleBooking(therapist)}
-              className="bg-[#DEB678] text-white py-2 px-4 rounded-md mt-4 hover:bg-[#b78a55] transition-colors duration-300"
-            >
-              Book Now
-            </button>
+    <div className="bg-slate-100 dark:bg-black">
+      <div className="max-w-6xl mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
+        {therapists.map((therapist) => (
+          <div
+            key={therapist?.id}
+            className="rounded-lg overflow-hidden shadow-lg bg-white dark:bg-black dark:text-white border border-[#DEB678]"
+          >
+            <div className="relative">
+              <img
+                className="w-full h-64 object-cover"
+                src={therapist?.image}
+                alt="Card image"
+              />
+            </div>
+            <div className="p-4">
+              <h2 className="text-lg font-semibold">Smile</h2>
+              <p className="text-sm">7 Years of Experience</p>
+              <button
+                onClick={() =>
+                  router.push(
+                    `/booking/therapist=${therapist?.name}&id=${therapist.id}`
+                  )
+                }
+                className="mt-4 text-yellow-500 underline"
+              >
+                Book Now
+              </button>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

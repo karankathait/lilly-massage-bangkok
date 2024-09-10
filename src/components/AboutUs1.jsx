@@ -7,7 +7,7 @@ const AboutUs1 = () => {
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between py-16">
         {/* Left Side - Text Content */}
         <div className="lg:w-1/2 md:pr-16 ">
-          <h3 className="josefin-slab-font text-[#EFC481] text-2xl font-semibold mb-4">
+          <h3 className="josefin-slab-font text-[#FF708F] dark:text-[#EFC481] text-2xl font-semibold mb-4">
             <span></span>
             About US
           </h3>
@@ -68,8 +68,8 @@ const AboutUs1 = () => {
           />
 
           {/* Experience Badge */}
-          <div className="absolute bottom-0 md:-bottom-5 left-0 md:-left-10 bg-black rounded-2xl rounded-tr-[5rem] px-3 md:px-10 py-3 md:py-8 border border-[#EFC481]">
-            <p className="text-3xl font-bold text-yellow-600">12+</p>
+          <div className="absolute bottom-0 md:-bottom-5 left-0 md:-left-10 bg-black rounded-2xl rounded-tr-[5rem] px-3 md:px-10 py-3 md:py-8 border border-[#EFC481] text-center">
+            <p className="text-3xl font-bold text-[#FF708F] dark:text-yellow-600">12+</p>
             <p className="text-lg text-gray-300">Years of Experience</p>
           </div>
         </div>

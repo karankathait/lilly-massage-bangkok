@@ -9,11 +9,15 @@ import ServicesSection from "@/components/ServicesSection.jsx"
 import PromoBanner from "@/components/PromoBanner.jsx"
 import HeroSection1 from "@/components/HeroSection1.jsx"
 import StatsSection from "@/components/StatsSection.jsx"
+import TestimonialsSection from "@/components/TestimonialsSection "
+import AboutUs1 from "@/components/AboutUs1"
 export default function Home() {
   return (
     <main>
       <Navbar />
       <HeroSection1 />
+      <AboutUs1 />
+      <TestimonialsSection />
       <ServicesSection />
       <Gallery />
       <StatsSection />

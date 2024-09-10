@@ -81,7 +81,7 @@ const HeroSection1 = () => {
               {/* Dark overlay */}
               <div className="absolute inset-0 bg-black opacity-50"></div>
               <div className="max-w-6xl mx-auto relative z-10 flex flex-col justify-center h-full text-left text-white px-8 lg:px-0 ">
-                <h2 className="josefin-slab-font text-4xl text-[#EFC481]">Welcome to</h2>
+                <h2 className="josefin-slab-font text-4xl text-[#FF708F] dark:text-[#EFC481]">Welcome to</h2>
                 <h1 className="josefin-sans-font text-5xl font-bold mt-2">
                   Nurturing Your Soul <br /> with Every Massage
                 </h1>
@@ -91,10 +91,10 @@ const HeroSection1 = () => {
 
                 {/* Buttons */}
                 <div className="mt-8 flex gap-5">
-                  <button className="bg-[#DEB678] text-white dark:bg-[#1E1A12] border border-[#DEB678] px-6 py-3  dark:text-[#DEB678] font-medium hover:bg-yellow-700">
+                  <button className="bg-[#FF708F]  text-white dark:bg-[#1E1A12] border border-[#FF708F] dark:border-[#DEB678] px-6 py-3  dark:text-[#DEB678] font-medium hover:bg-yellow-700">
                     Book Now
                   </button>
-                  <button className="bg-[#DEB678] text-white dark:bg-[#1E1A12] border border-[#DEB678] px-6 py-3  dark:text-[#DEB678] font-medium hover:bg-yellow-700">
+                  <button className="bg-[#FF708F]  text-white dark:bg-[#1E1A12] border border-[#FF708F] dark:border-[#DEB678] px-6 py-3  dark:text-[#DEB678] font-medium hover:bg-yellow-700">
                     Contact Us
                   </button>
                 </div>

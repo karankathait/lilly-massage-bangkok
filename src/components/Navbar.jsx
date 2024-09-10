@@ -21,10 +21,11 @@ const Navbar = () => {
   const isActive = (path) => router.pathname === path;
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-10 bg-black bg-opacity-50">
+    // <nav className="absolute top-0 left-0 w-full z-10 bg-black bg-opacity-50">
+    <nav className="w-full z-10 bg-white dark:bg-black ">
       <div className="max-w-6xl mx-auto h-20 flex items-center justify-between px-8 py-4">
         {/* Logo */}
-        <div className="text-2xl font-semibold text-[#DEB678]">
+        <div className="text-2xl font-semibold text-[#FF708F] dark:text-[#DEB678]">
           LILLY MASSAGE
         </div>
 
@@ -52,21 +53,21 @@ const Navbar = () => {
                 href="/"
                 className={`${
                   isActive("/")
-                    ? "text-[#EFC481]"
-                    : "text-white hover:text-[#DEB678]"
+                    ? "text-[#FF708F] dark:text-[#DEB678]"
+                    : "text-black dark:text-white hover:text-[#DEB678]"
                 }`}
               >
                 Home
               </Link>
             </li>
-            
+
             <li className="transition-colors duration-300">
               <Link
                 href="/about"
                 className={`${
                   isActive("/about")
-                    ? "text-[#EFC481]"
-                    : "text-white hover:text-[#DEB678]"
+                    ? "text-[#FF708F] dark:text-[#DEB678]"
+                    : "text-black dark:text-white hover:text-[#DEB678]"
                 }`}
               >
                 About Us
@@ -78,8 +79,8 @@ const Navbar = () => {
                 href="/massage-price"
                 className={`${
                   isActive("/massage-price")
-                    ? "text-[#EFC481]"
-                    : "text-white hover:text-[#DEB678]"
+                    ? "text-[#FF708F] dark:text-[#DEB678]"
+                    : "text-black dark:text-white hover:text-[#DEB678]"
                 }`}
               >
                 Our Pricing
@@ -90,21 +91,21 @@ const Navbar = () => {
                 href="/our-therapists"
                 className={`${
                   isActive("/our-therapists")
-                    ? "text-[#EFC481]"
-                    : "text-white hover:text-[#DEB678]"
+                    ? "text-[#FF708F] dark:text-[#DEB678]"
+                    : "text-black dark:text-white hover:text-[#DEB678]"
                 }`}
               >
                 Our Therapists
               </Link>
             </li>
-            
+
             <li className="transition-colors duration-300">
               <Link
                 href="/contact"
                 className={`${
                   isActive("/contact")
-                    ? "text-[#EFC481]"
-                    : "text-white hover:text-[#DEB678]"
+                    ? "text-[#FF708F] dark:text-[#DEB678]"
+                    : "text-black dark:text-white hover:text-[#DEB678]"
                 }`}
               >
                 Contact
@@ -120,13 +121,13 @@ const Navbar = () => {
           }`}
         >
           <Link href="#">
-            <FaFacebook className="text-[#EFC481] text-xl" />
+            <FaFacebook className="text-[#FF708F] dark:text-[#EFC481] text-xl" />
           </Link>
           <Link href="#">
-            <FaWhatsapp className="text-[#EFC481] text-xl" />
+            <FaWhatsapp className="text-[#FF708F] dark:text-[#EFC481] text-xl" />
           </Link>
           <Link href="#">
-            <FaInstagram className="text-[#EFC481] text-xl" />
+            <FaInstagram className="text-[#FF708F] dark:text-[#EFC481] text-xl" />
           </Link>
 
           <DarkModeToggle />

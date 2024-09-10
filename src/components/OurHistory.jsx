@@ -5,7 +5,7 @@ const OurHistory = () => {
     <div className=" py-10 text-white dark:bg-black">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between">
         <div className="lg:w-1/2">
-          <h2 className="josefin-slab-font text-[#EFC481] text-4xl font-semibold mb-4">
+          <h2 className="josefin-slab-font text-[#FF708F] dark:text-[#EFC481] text-4xl font-semibold mb-4">
             Our History
           </h2>
           <div className="roboto-condensed-font text-slate-800 dark:text-slate-200 md:pr-10 text-lg">
@@ -30,10 +30,10 @@ const OurHistory = () => {
         </div>
         <div className="lg:w-1/2 flex flex-col lg:flex-row gap-5">
           <div className="w-1/2">
-            <img src="/product-1.jpg" alt="Massage image" className="border border-[#EFC481] rounded-lg" />
+            <img src="/product-1.jpg" alt="Massage image" className="border border-[#FF708F] dark:border-[#EFC481] rounded-lg" />
           </div>
           <div className="w-1/2">
-            <img src="/product-2.jpg" alt="Massage image" className="border border-[#EFC481] rounded-lg" />
+            <img src="/product-2.jpg" alt="Massage image" className="border border-[#FF708F] dark:border-[#EFC481] rounded-lg" />
           </div>
           {/* <img src="/product-1.jpg" alt="Massage image" className="w-1/2" />
         <img src="/product-2.jpg" alt="Relaxing bath image" className="" /> */}

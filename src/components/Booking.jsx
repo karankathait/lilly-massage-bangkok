@@ -71,7 +71,7 @@ const Booking = () => {
             <img
               src={therapist.image}
               alt={therapist.name}
-              className="w-full h-48 object-cover"
+              className="w-full h- object-cover"
             />
             <div className="p-4 text-center">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
