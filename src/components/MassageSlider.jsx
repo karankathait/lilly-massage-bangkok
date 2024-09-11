@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 
 // Card Slider component
-const MassagesSlider = () => {
+const MassageSlider = () => {
   // Slider settings
   const settings = {
     dots: true,
@@ -82,4 +82,4 @@ const MassagesSlider = () => {
   );
 };
 
-export default MassagesSlider;
+export default MassageSlider;
