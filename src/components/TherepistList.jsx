@@ -30,7 +30,7 @@ const TherepistList = () => {
               <button
                 onClick={() =>
                   router.push(
-                    `/booking/therapist=${therapist?.name}&id=${therapist.id}`
+                    `/booking?therapist=${therapist.name}&id=${therapist.id}`
                   )
                 }
                 className="mt-4 text-yellow-500 underline"

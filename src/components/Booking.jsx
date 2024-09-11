@@ -82,7 +82,7 @@ const Booking = () => {
         )}
 
         <div className="w-full md:w-1/2 border border-[#DEB678]">
-          <form onSubmit={handleSubmit} className="shadow-md rounded-lg p-6">
+          <form onSubmit={handleSubmit} className="p-6">
             <div className="mb-6">
               <div className="flex justify-between">
                 <div className={`step ${currentStep === 1 ? "active" : ""}`}>

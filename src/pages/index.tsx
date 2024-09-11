@@ -11,16 +11,18 @@ import HeroSection1 from "@/components/HeroSection1.jsx"
 import StatsSection from "@/components/StatsSection.jsx"
 import TestimonialsSection from "@/components/TestimonialsSection "
 import AboutUs1 from "@/components/AboutUs1"
+import MassagesSlider from "@/components/MassagesSLider"
 export default function Home() {
   return (
     <main>
       <Navbar />
       <HeroSection1 />
       <AboutUs1 />
+      <MassagesSlider />
       <TestimonialsSection />
       <ServicesSection />
       <Gallery />
-      <StatsSection />
+      {/* <StatsSection /> */}
       <PromoBanner />
       <WellnessTherapy />
       <Footer />

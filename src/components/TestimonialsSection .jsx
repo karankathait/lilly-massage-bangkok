@@ -47,7 +47,7 @@ const TestimonialsSection = () => {
 
   const settings = {
     dots: false,
-    arrows:false,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -58,8 +58,8 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <div className="bg-slate-200 dark:bg-black w-full py-16">
-      <div className="max-w-6xl mx-auto bg-white dark:bg-black border dark:border-[#DEB678] p-8 rounded-3xl">
+    <div className="bg-slate-200 dark:bg-black w-full px-5 py-8">
+      <div className="max-w-6xl mx-auto bg-white dark:bg-black border dark:border-[#DEB678] p-5 md:p-8 rounded-3xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Section */}
           <div className="relative rounded-lg overflow-hidden">

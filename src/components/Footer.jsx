@@ -2,12 +2,12 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 text-gray-800 py-10">
+    <footer className="bg-gray-50 text-gray-800 dark:bg-black py-10 border-t border-t-[#FF708F] dark:border-[#EFC481]">
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         
         {/* Column 1: Brand Info */}
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-900">Lilly Massage Bangkok.</h2>
+          <h2 className="text-2xl font-bold text-[#FF708F] dark:text-[#EFC481] ">Lilly Massage Bangkok.</h2>
           <p className="text-sm">
             SPA & Wellness Center
           </p>
@@ -87,8 +87,8 @@ const Footer = () => {
       </div>
       
       {/* Footer Bottom */}
-      <div className="mt-10 border-t border-gray-200 pt-6 text-center text-sm text-gray-600">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+      <div className="mt-10 border-t border-t-[#FF708F] dark:border-[#EFC481] border-gray-200 pt-6 text-center text-sm text-gray-600">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center ">
           <p>Copyright © 2024 Lilly Massage. All Rights Reserved.</p>
           <ul className="flex space-x-4 mt-4 md:mt-0">
             <li><a href="#!" className="hover:text-gray-900">Home</a></li>

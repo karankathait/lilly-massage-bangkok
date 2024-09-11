@@ -75,7 +75,7 @@ const DarkModeToggle = () => {
       />
       <label
         htmlFor="checkbox"
-        className="flex items-center cursor-pointer w-14 h-6 bg-gray-800 dark:bg-gray-300 rounded-full p- relative"
+        className="flex items-center justify-between cursor-pointer w-14 h-6 bg-gray-800 dark:bg-gray-300 rounded-full p- relative"
       >
         <FaMoon className="text-pink-500 absolute left-2 top-1/2 transform -translate-y-1/2" />
         <FaSun className="text-yellow-500 absolute right-2 top-1/2 transform -translate-y-1/2" />
