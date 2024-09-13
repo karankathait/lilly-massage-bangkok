@@ -34,9 +34,9 @@ const MassageSlider = () => {
   const cards = [
     {
       image: "/path/to/relaxing-massage.jpg",
-      title: "Relaxing Massage",
+      title: "Thai Massage",
       description:
-        "Experience full-body relaxation with soothing massage techniques.",
+        "Thai massage is another popular kneading and rubdown technique among all. It can be extremely painful for those who do not have any prior experience. <br /> You will find your body being twisted in many awkward   positions tht may make you scream out in pain, but in the end you will not only feel totally relaxed and your body will feel supple and light",
     },
     {
       image: "/path/to/deep-tissue-massage.jpg",
@@ -59,8 +59,8 @@ const MassageSlider = () => {
 
   return (
     <div className="w-full py-8">
-      <div className="max-w-6xl mx-auto grid-cols-3">
-        <Slider {...settings}>
+      <div className="max-w-6xl mx-auto grid grid-cols-3">
+        {/* <Slider {...settings}> */}
           {cards.map((card, index) => (
             <div key={index} className="px-4">
               <div className="bg-white shadow-md rounded-lg overflow-hidden">
@@ -76,7 +76,7 @@ const MassageSlider = () => {
               </div>
             </div>
           ))}
-        </Slider>
+        {/* </Slider> */}
       </div>
     </div>
   );
