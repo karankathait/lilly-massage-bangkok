@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaBars,
   FaTimes,
+  FaSpa,
 } from "react-icons/fa";
 import DarkModeToggle from "@/components/DarkModeToogle.jsx";
 
@@ -21,11 +22,15 @@ const Navbar = () => {
   const isActive = (path) => router.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full z-10 bg-white dark:bg-black shadow-md">
+    <nav className="fixed top-0 left-0 z-50 w-full bg-white dark:bg-black shadow-md">
       <div className="max-w-6xl mx-auto h-20 flex items-center justify-between px-8">
         {/* Logo (left-aligned on mobile) */}
-        <div className="text-2xl font-semibold text-[#FF708F] dark:text-[#DEB678]">
-          LILLY MASSAGE
+        <div className="josefin-slab-font text-2xl font-semibold text-[#FF708F] dark:text-[#DEB678] flex items-center gap-2">
+          <span>
+            {/* <FaSpa className="w-7 h-7"/> */}
+            <img src="./web-icon.png" className="w-10" alt="" />
+          </span>
+          <span>LILLY MASSAGE</span>
         </div>
 
         {/* Hamburger Icon (Mobile - right-aligned) */}
@@ -78,7 +83,7 @@ const Navbar = () => {
                     : "text-black dark:text-white hover:text-[#FF708F] dark:hover:text-[#DEB678]"
                 }`}
               >
-                Our Pricing
+                Massage & Price
               </Link>
             </li>
 

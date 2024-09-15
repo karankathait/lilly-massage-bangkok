@@ -1,6 +1,6 @@
 import { useSearchParams } from "next/navigation";
 import { therapists } from "@/data/therapists";
-import { massages } from "@/data/massages";
+import { pricing } from "@/data/pricing";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -29,7 +29,7 @@ const Booking = () => {
 
   const handleMassageChange = (e) => {
     const massageId = parseInt(e.target.value);
-    const massage = massages.find((m) => m.id === massageId);
+    const massage = pricing.find((m) => m.id === massageId);
     setSelectedMassage(massage);
     setSelectedDuration("");
     setPrice("");
@@ -118,7 +118,7 @@ const Booking = () => {
                     required
                   >
                     <option value="">-- Choose Massage --</option>
-                    {massages.map((massage) => (
+                    {pricing.map((massage) => (
                       <option key={massage.id} value={massage.id}>
                         {massage.name}
                       </option>

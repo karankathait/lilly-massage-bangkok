@@ -63,15 +63,23 @@ const massageData = [
 ];
 
 const PricingCard = () => {
-    const router = useRouter()
+  const router = useRouter();
   return (
     <>
       <div className="dark:bg-black py-10 px-8 md:px-0">
+        <div className="text-center mb-8">
+          <h1 className="josefin-slab-font text-4xl font-medium text-[#FF708F] dark:text-[#EFC481] mb-2">
+            Our Pricing
+          </h1>
+          <p className="josefin-sans-font text-slate-700 dark:text-slate-200 text-xl">
+            Quality Services at Competitive Prices
+          </p>
+        </div>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
           {massageData.map((massage, index) => (
             <div
               key={index}
-              className={`border border-[#FF708F] dark:border-[#DEB678] rounded-2xl shadow-lg text-center overflow-hidden`}
+              className={`border dark:border-slate-900 rounded-2xl shadow-lg text-center overflow-hidden`}
             >
               <h3 className="josefin-slab-font text-lg font-semibold flex items-center justify-center gap-1 p-4 text-white bg-[#FF708F] dark:bg-[#DEB678]">
                 <span>
@@ -109,7 +117,7 @@ const PricingCard = () => {
                   ))}
                 </div>
                 <button
-                onClick={() => router.push(`/our-therapists`)}
+                  onClick={() => router.push(`/our-therapists`)}
                   className={`px-5 font-medium py-2 rounded-md text-white bg-[#FF708F] dark:bg-[#DEB678]`}
                 >
                   Book Now

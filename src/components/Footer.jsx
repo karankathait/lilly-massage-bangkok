@@ -9,9 +9,16 @@ const Footer = () => {
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Column 1: Brand Info */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-[#FF708F] dark:text-[#EFC481] ">
+        <div className="josefin-slab-font text-2xl font-semibold text-[#FF708F] dark:text-[#DEB678] flex items-center gap-2">
+          <span>
+            {/* <FaSpa className="w-7 h-7"/> */}
+            <img src="./web-icon.png" className="w-10" alt="" />
+          </span>
+          <span>LILLY MASSAGE</span>
+        </div>
+          {/* <h2 className="text-2xl font-bold text-[#FF708F] dark:text-[#EFC481] ">
             Lilly Massage Bangkok.
-          </h2>
+          </h2> */}
           <p className="text-slate-600 dark:text-slate-200">
             SPA & Wellness Center
           </p>

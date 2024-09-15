@@ -20,11 +20,10 @@ export default function Home() {
       <Navbar />
       <HeroSection1 />
       <AboutUs1 />
-      <PricingCard />
       <MassageSlider />
-{/*       <MassagesSlider /> */}
       <TestimonialsSection />
-      <ServicesSection />
+{/*       <MassagesSlider /> */}
+      {/* <ServicesSection /> */}
       <Gallery />
       {/* <StatsSection /> */}
       <PromoBanner />

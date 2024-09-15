@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="A brief description of your website for SEO purposes." />
         <meta name="keywords" content="Next.js, React, SEO, your, keywords" />
         <meta name="author" content="Your Name" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <meta property="og:title" content="Your Website Title" />
         <meta property="og:description" content="A brief description of your website for social media sharing." />
         <meta property="og:image" content="/images/og-image.jpg" />
