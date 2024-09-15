@@ -12,7 +12,7 @@ const MassageSlider = () => {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -37,7 +37,7 @@ const MassageSlider = () => {
 
   return (
     <div className="bg-slate-50 dark:bg-black w-full py-8 px-4 md:px-0">
-      <div className="text-center mb-8">
+      <div className="text-center mb-5">
         <h1 className="josefin-slab-font text-4xl font-medium text-[#FF708F] dark:text-[#EFC481] mb-2">
           Our Products
         </h1>
@@ -59,7 +59,7 @@ const MassageSlider = () => {
                 className="h-[500px] relative bg-white overflow-hidden group" // Added 'group' to control hover effect
               >
                 {/* Hover Effect */}
-                <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
 
                 <div className="absolute bottom-0 p-4 bg-[#ff708fdc] dark:bg-[#efc581e5] text-center text-white">
                   <h3 className="libre-baskerville-font text-2xl font-medium mb-1">

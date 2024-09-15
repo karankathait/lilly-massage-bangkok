@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full bg-white dark:bg-black shadow-md">
-      <div className="max-w-6xl mx-auto h-20 flex items-center justify-between px-8">
+      <div className="max-w-6xl mx-auto h-20 flex items-center justify-between px-8 md:px-0">
         {/* Logo (left-aligned on mobile) */}
         <div className="josefin-slab-font text-2xl font-semibold text-[#FF708F] dark:text-[#DEB678] flex items-center gap-2">
           <span>
@@ -114,18 +114,16 @@ const Navbar = () => {
             </li>
             <li>
               {isOpen && (
-                <div className="flex items-center justify-around">
-                  <div className="flex space-x-4 text-xl">
-                    <Link href="#">
-                      <FaFacebook className="text-[#FF708F] dark:text-[#EFC481] hover:text-[#DEB678] transition-colors duration-300" />
-                    </Link>
-                    <Link href="#">
-                      <FaWhatsapp className="text-[#FF708F] dark:text-[#EFC481] hover:text-[#DEB678] transition-colors duration-300" />
-                    </Link>
-                    <Link href="#">
-                      <FaInstagram className="text-[#FF708F] dark:text-[#EFC481] hover:text-[#DEB678] transition-colors duration-300" />
-                    </Link>
-                  </div>
+                <div className="flex items-center gap-5 text-xl">
+                  <Link href="#">
+                    <FaFacebook className="text-[#FF708F] dark:text-[#EFC481] hover:text-[#DEB678] transition-colors duration-300" />
+                  </Link>
+                  <Link href="#">
+                    <FaWhatsapp className="text-[#FF708F] dark:text-[#EFC481] hover:text-[#DEB678] transition-colors duration-300" />
+                  </Link>
+                  <Link href="#">
+                    <FaInstagram className="text-[#FF708F] dark:text-[#EFC481] hover:text-[#DEB678] transition-colors duration-300" />
+                  </Link>
                   <DarkModeToggle />
                 </div>
               )}

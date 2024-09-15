@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { IoFlower } from "react-icons/io5";
 
 const AboutUs1 = () => {
   return (
@@ -12,20 +13,25 @@ const AboutUs1 = () => {
             About US
           </h3>
           <h2 className="josefin-slab-font text-4xl text-slate-800 dark:text-white leading-normal">
-            A holistic approach to physiotherapy and alternative medicine
+            At Lilly Massage Bangkok
           </h2>
           <p className="text-slate-700 dark:text-gray-300 text-lg mt-4 ">
-            As healthcare professionals, the wellbeing of our clients and
-            patients is the utmost priority, we are passionate about providing a
-            high-quality service.
+            We offer exceptional service throughout the Bangkok area with a team
+            of professional therapists who are expertly trained and dedicated to
+            your well-being. With our commitment to convenience, cleanliness,
+            and safety, you can trust in our ability to provide a superior
+            massage experience right at your hotel, condominium, residence, or
+            home. Let us help you unwind from your busy day without having to
+            leave the comfort of your own space.
           </p>
 
           {/* Features */}
           <div className="space-y-10 mt-8">
             <div className="flex items-start gap-2">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#191919] rounded-md border border-[#EFC481] border-opacity-40 transform rotate-45">
+              <div className="w-14 h-14 flex items-center justify-center bg-[#191919] rounded-md border border-[#EFC481] border-opacity-40 transform rotate-45">
                 <div className="transform -rotate-45">
-                  <Image src="/Spa Flower.png" width={40} height={40} />
+                  {/* <Image src="/Spa Flower.png" width={40} height={40} /> */}
+                  <IoFlower className="w-6 h-6 text-[#FF708F] dark:text-[#EFC481]" />
                 </div>
               </div>
 
@@ -39,9 +45,10 @@ const AboutUs1 = () => {
               </div>
             </div>
             <div className="flex items-start gap-2">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#191919] rounded-md border border-[#EFC481] border-opacity-40 transform rotate-45">
+              <div className="w-14 h-14 flex items-center justify-center bg-[#191919] rounded-md border border-[#EFC481] border-opacity-40 transform rotate-45">
                 <div className="transform -rotate-45">
-                  <Image src="/Lotus.png" width={30} height={30} />
+                  {/* <Image src="/Lotus.png" width={30} height={30} /> */}
+                  <IoFlower className="w-6 h-6 text-[#FF708F] dark:text-[#EFC481]" />
                 </div>
               </div>
 
@@ -62,14 +69,16 @@ const AboutUs1 = () => {
         <div className="lg:w-1/2 mt-8 lg:mt-0 relative">
           {/* Image */}
           <img
-            src="/about-us-1.jpg"
+            src="/about-us-2.jpg"
             alt="Massage Therapy"
             className="w-full h-auto rounded-2xl md:rounded-tl-[20rem]  object-cover border border-[#EFC481]"
           />
 
           {/* Experience Badge */}
           <div className="absolute bottom-0 md:-bottom-5 left-0 md:-left-10 bg-black rounded-2xl rounded-tr-[5rem] px-3 md:px-10 py-3 md:py-8 border border-[#EFC481] text-center">
-            <p className="text-3xl font-bold text-[#FF708F] dark:text-yellow-600">12+</p>
+            <p className="text-3xl font-bold text-[#FF708F] dark:text-yellow-600">
+              12+
+            </p>
             <p className="text-lg text-gray-300">Years of Experience</p>
           </div>
         </div>

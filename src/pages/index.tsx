@@ -13,6 +13,7 @@ import TestimonialsSection from "@/components/TestimonialsSection "
 import AboutUs1 from "@/components/AboutUs1"
 import MassageSlider from "@/components/MassageSlider.jsx"
 import PricingCard from "@/components/PricingCard"
+import InstagramCaraousal from "@/components/InstagramCaraousal"
 // import MassagesSlider from "@/components/MassagesSLider"
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <HeroSection1 />
       <AboutUs1 />
       <MassageSlider />
+      <InstagramCaraousal />
       <TestimonialsSection />
 {/*       <MassagesSlider /> */}
       {/* <ServicesSection /> */}

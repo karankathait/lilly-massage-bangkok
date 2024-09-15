@@ -141,7 +141,7 @@ const TestimonialsSection = () => {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -255,13 +255,13 @@ const TestimonialsSection = () => {
         <div className="">
           <button
             onClick={() => sliderRef.current.slickPrev()}
-            className="absolute top-1/2 -left-8 p-2 bg-[#FF708F] dark:bg-[#EFC481] text-white rounded-full hover:bg-pink-600 transition"
+            className="absolute top-1/2 left-0 md:-left-8 p-2 bg-[#FF708F] dark:bg-[#EFC481] text-white rounded-full hover:bg-pink-600 transition"
           >
             <GrFormPrevious className="w-7 h-7" />
           </button>
           <button
             onClick={() => sliderRef.current.slickNext()}
-            className="absolute top-1/2 -right-8 p-2 bg-[#FF708F] dark:bg-[#EFC481] text-white rounded-full hover:bg-pink-600 transition"
+            className="absolute top-1/2 right-0 md:-right-8 p-2 bg-[#FF708F] dark:bg-[#EFC481] text-white rounded-full hover:bg-pink-600 transition"
           >
             <GrFormNext className="w-7 h-7" />
           </button>

@@ -11,11 +11,11 @@ const MassageCard = ({ image, title, description }) => {
         />
       </div>
       <div className="md:w-2/3 md:pl-6 mt-4 md:mt-0 flex flex-col ">
-        <h3 className="libre-baskerville-font text-[#FF708F] dark:text-[#EFC481] text-2xl mb-4">
+        <h3 className="libre-baskerville-font text-[#FF708F] dark:text-[#EFC481] text-2xl mb-2">
           {title}
         </h3>
         <p
-            className=" text-[#757575] mb-5 leading-loose"
+            className=" text-[#757575] dark:text-slate-200 mb-5 leading-loose"
           dangerouslySetInnerHTML={{ __html: description }}
         />
         {/* <p className="josefin-sans-font text-gray-500 mb-4">{description}</p> */}

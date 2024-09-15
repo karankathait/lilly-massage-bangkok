@@ -16,7 +16,7 @@ const ServicesSection = () => {
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="josefin-slab-font text-4xl text-[#EFC481] mb-4">The Best Services for you</h2>
         <p className="text-gray-500 mb-10">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (

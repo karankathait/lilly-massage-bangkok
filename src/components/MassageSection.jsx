@@ -16,8 +16,8 @@ const articles = [
 
 const MassageSection = () => {
   return (
-    <div className="bg-white px-8">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-5">
+    <div className="bg-white dark:bg-black px-8">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
         <div className="col-span-3">
           {massages.map((massage, index) => (
             <MassageCard

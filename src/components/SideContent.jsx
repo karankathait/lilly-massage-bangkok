@@ -2,14 +2,33 @@ import React from "react";
 
 const SideContent = () => {
   const images = [
-    "path/to/image1.jpg",
-    "path/to/image2.jpg",
-    "path/to/image3.jpg",
-    "path/to/image4.jpg",
-    "path/to/image5.jpg",
-    "path/to/image6.jpg",
-    "path/to/image7.jpg",
-    "path/to/image8.jpg",
+    "/insta-img-1.jpg",
+    "/insta-img-2.jpg",
+    "/insta-img-3.jpg",
+    "/insta-img-4.jpg",
+    "/insta-img-5.jpg",
+    "/insta-img-6.jpg",
+    "/insta-img-7.jpg",
+    "/insta-img-8.jpg",
+    "/insta-img-9.jpg",
+  ];
+
+  const posts = [
+    {
+      title: "Relaxing Spa Treatments",
+      date: "October 20, 2023",
+      imageUrl: "/gallery-2.jpg", // replace with actual image
+    },
+    {
+      title: "Healing Massage Therapy",
+      date: "October 20, 2023",
+      imageUrl: "/gallery-5.jpg", // replace with actual image
+    },
+    {
+      title: "Aromatherapy Benefits",
+      date: "October 19, 2023",
+      imageUrl: "hero-bg-11.jpg", // replace with actual image
+    },
   ];
 
   return (
@@ -46,7 +65,7 @@ const SideContent = () => {
         </div>
       </div>
 
-      <div className="shadow-lg border p-6 text-center">
+      <div className="shadow-lg border p-6 text-center mb-8">
         <h3 className="uppercase text-sm text-gray-500 mb-4">Instagram</h3>
         <div className="grid grid-cols-3 gap-2 mb-4">
           {images.map((image, index) => (
@@ -62,6 +81,63 @@ const SideContent = () => {
           <i className="fab fa-instagram mr-2"></i>Follow on Instagram
         </button>
       </div>
+
+      {/* First Box */}
+      <div className="border border-gray-200 p-4 mb-8">
+        <p className="text-center text-sm font-semibold text-gray-500 mb-2">
+          BANNER
+        </p>
+        <div className="relative">
+          <img
+            src="banner-1.jpg" // replace with your image
+            alt="Banner"
+            className="object-cover w-full"
+          />
+        </div>
+      </div>
+
+      {/* Second Box */}
+      <div className="border border-gray-200 p-4 mb-8">
+        <p className="text-center text-sm font-semibold text-gray-500 mb-2">
+          PROMO BOX
+        </p>
+        <div className="relative">
+          <img
+            src="banner-2.jpg" // replace with your image
+            alt="Promo Box"
+            className="object-cover w-full"
+          />
+          <div className="absolute inset-0 flex justify-center items-center">
+            <span className="bg-white px-3 py-1 text-sm font-medium text-gray-700 shadow-md">
+              LILLY MASSAGE
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* latest posts */}
+      <div className="border border-gray-200 p-4">
+      <h3 className="text-center text-lg font-semibold text-gray-600 mb-4">
+        LATEST POSTS
+      </h3>
+      <div className="space-y-4">
+        {posts.map((post, index) => (
+          <div key={index} className="flex items-start space-x-4">
+            <img
+              src={post.imageUrl}
+              alt={post.title}
+              className="w-24 h-24 object-cover border border-gray-200"
+            />
+            <div>
+              <h4 className="text-md font-semibold text-gray-700">
+                {post.title}
+              </h4>
+              <p className="text-sm text-gray-500">{post.date}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
     </>
   );
 };

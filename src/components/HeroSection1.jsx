@@ -41,13 +41,10 @@
 //   );
 // }
 
-
-
-
-import React from 'react';
-import 'slick-carousel/slick/slick.css'; 
-import 'slick-carousel/slick/slick-theme.css';
-import Slider from 'react-slick';
+import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const HeroSection1 = () => {
   const settings = {
@@ -62,16 +59,17 @@ const HeroSection1 = () => {
   };
 
   const bgImages = [
-    '/hero-bg-1.jpg', // Replace with your image paths
-    '/hero-bg-2.jpg',
-    '/hero-bg-3.jpg',
+    "/hero-img-1.jpg", // Replace with your image paths
+    "/hero-img-2.jpg",
+    "/hero-img-3.jpg",
+    "/hero-img-4.jpg",
   ];
 
   return (
-    <section className="relative w-full h-screen">
+    <section className="relative w-full h-[70vh] md:h-screen">
       <Slider {...settings}>
         {bgImages.map((image, index) => (
-          <div key={index} className="relative w-full h-screen">
+          <div key={index} className="relative w-full h-[70vh] md:h-screen">
             <div
               className="w-full h-full bg-cover bg-center"
               style={{
@@ -81,12 +79,15 @@ const HeroSection1 = () => {
               {/* Dark overlay */}
               <div className="absolute inset-0 bg-black opacity-50"></div>
               <div className="max-w-6xl mx-auto relative z-10 flex flex-col justify-center h-full text-left text-white px-8 lg:px-0 ">
-                <h2 className="josefin-slab-font text-4xl text-[#FF708F] dark:text-[#EFC481]">Welcome to</h2>
-                <h1 className="josefin-sans-font text-5xl font-bold mt-2">
+                <h2 className="josefin-slab-font text-2xl md:text-4xl text-[#FF708F] dark:text-[#EFC481]">
+                  Welcome to
+                </h2>
+                <h1 className="josefin-sans-font text-3xl md:text-5xl font-bold mt-2">
                   Nurturing Your Soul <br /> with Every Massage
                 </h1>
-                <p className="josefin-slab-font text-lg mt-4 text-[#D7D6D6] ">
-                  Revitalize Your Senses in a Timeless Setting. Experience the <br /> Healing Touch of Tradition.
+                <p className="josefin-slab-font md:text-lg mt-4 text-[#D7D6D6] ">
+                  Revitalize Your Senses in a Timeless Setting. Experience the{" "}
+                  <br /> Healing Touch of Tradition.
                 </p>
 
                 {/* Buttons */}
