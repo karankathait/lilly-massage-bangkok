@@ -10,7 +10,6 @@ const SideContent = () => {
     "/insta-img-6.jpg",
     "/insta-img-7.jpg",
     "/insta-img-8.jpg",
-    "/insta-img-9.jpg",
   ];
 
   const posts = [
@@ -33,17 +32,17 @@ const SideContent = () => {
 
   return (
     <>
-      <div className="border p-6 mb-6 text-center mt-10">
+      <div className="border p-6 mb-6 text-center">
         <h3 className="uppercase text-sm text-gray-500 mb-4">About Us</h3>
         <img
-          src="path/to/image.jpg"
+          src="/why-us-1.jpg"
           alt="About Me"
           className="w-full h-auto object-cover mb-4 rounded"
         />
-        <h4 className="text-lg font-semibold text-blue-600">
+        <h4 className="text-lg font-semibold text-[#FF708F] dark:text-[#EFC481]">
           Lilly Massage Bangkok
         </h4>
-        <p className="text-sm text-gray-700 my-4">
+        <p className="text- text-gray-700 dark:text-slate-200 my-4">
           Our expert therapists offer top-notch service across Bangkok. Enjoy
           professional, clean, and safe treatments in the comfort of your hotel,
           condo, or home. Relax and rejuvenate without leaving your place.
@@ -67,7 +66,7 @@ const SideContent = () => {
 
       <div className="shadow-lg border p-6 text-center mb-8">
         <h3 className="uppercase text-sm text-gray-500 mb-4">Instagram</h3>
-        <div className="grid grid-cols-3 gap-2 mb-4">
+        <div className="grid grid-cols-2 gap-2 mb-4">
           {images.map((image, index) => (
             <img
               key={index}
@@ -117,27 +116,27 @@ const SideContent = () => {
 
       {/* latest posts */}
       <div className="border border-gray-200 p-4">
-      <h3 className="text-center text-lg font-semibold text-gray-600 mb-4">
-        LATEST POSTS
-      </h3>
-      <div className="space-y-4">
-        {posts.map((post, index) => (
-          <div key={index} className="flex items-start space-x-4">
-            <img
-              src={post.imageUrl}
-              alt={post.title}
-              className="w-24 h-24 object-cover border border-gray-200"
-            />
-            <div>
-              <h4 className="text-md font-semibold text-gray-700">
-                {post.title}
-              </h4>
-              <p className="text-sm text-gray-500">{post.date}</p>
+        <h3 className="text-center font-semibold uppercase text-sm text-gray-500 mb-4">
+          LATEST POSTS
+        </h3>
+        <div className="space-y-4">
+          {posts.map((post, index) => (
+            <div key={index} className="flex items-start space-x-4">
+              <img
+                src={post.imageUrl}
+                alt={post.title}
+                className="w-24 h-24 object-cover border border-gray-200"
+              />
+              <div>
+                <h4 className="text-md font-semibold text-gray-700">
+                  {post.title}
+                </h4>
+                <p className="text-sm text-gray-500">{post.date}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
     </>
   );
 };

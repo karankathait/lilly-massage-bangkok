@@ -15,7 +15,7 @@ const MassageCard = ({ image, title, description }) => {
           {title}
         </h3>
         <p
-            className=" text-[#757575] dark:text-slate-200 mb-5 leading-loose"
+            className="open-sans-font text-[#757575] dark:text-slate-200 mb-5 leading-loose"
           dangerouslySetInnerHTML={{ __html: description }}
         />
         {/* <p className="josefin-sans-font text-gray-500 mb-4">{description}</p> */}

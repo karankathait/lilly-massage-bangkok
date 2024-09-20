@@ -9,10 +9,10 @@
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-
+import {NextUIProvider} from '@nextui-org/react'
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <NextUIProvider>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="A brief description of your website for SEO purposes." />
@@ -32,6 +32,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Lily Massage Bangkok </title>
       </Head>
       <Component {...pageProps} />
-    </>
+    </NextUIProvider>
   );
 }
