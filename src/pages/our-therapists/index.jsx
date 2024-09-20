@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar.jsx";
 import Header from "@/components/Header.jsx";
 import TherepistList from "@/components/TherepistList.jsx";
 import Header2 from "@/components/Header2";
+import Footer from "@/components/Footer.jsx";
 const index = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const index = () => {
         breadcrumbs={["Home", "Our Therapists"]}
       /> */}
       <TherepistList />
+      <Footer />
     </div>
   );
 };
