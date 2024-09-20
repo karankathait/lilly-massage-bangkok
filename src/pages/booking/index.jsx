@@ -170,7 +170,7 @@ const Index = () => {
               </>
             )}
 
-            {currentStep === 1 && (
+            {/* {currentStep === 1 && (
               <>
                 <h2 className="text-xl font-bold mb-2 dark:text-white">
                   Select Massage
@@ -205,17 +205,6 @@ const Index = () => {
                       required
                     >
                       <SelectItem value="">-- Choose Duration --</SelectItem>
-                      {/* {selectedMassage.prices.map((priceOption, index) => (
-            <SelectItem key={index} value={priceOption.duration}>
-              <span className="flex justify-between w-full">
-                <span>{priceOption.duration}</span>
-                <span className="text-gray-500 ml-4">
-                  ({priceOption.price})
-                </span>
-              </span>
-            </SelectItem>
-          ))} */}
-
                       {selectedMassage.prices.map((priceOption, index) => (
                         <SelectItem key={index} value={priceOption.duration}>
                           {priceOption.duration}
@@ -241,7 +230,7 @@ const Index = () => {
                   Next
                 </button>
               </>
-            )}
+            )} */}
 
             {currentStep === 2 && (
               <>

@@ -124,7 +124,7 @@ const Footer = () => {
           <ul className="space-y-4">
             <li className="flex items-center">
               <img
-                src="/path-to-image-1.jpg"
+                src="/insta-img-9.jpg"
                 alt="Post Image"
                 className="w-16 h-16 rounded object-cover mr-4"
               />
@@ -140,7 +140,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center">
               <img
-                src="/path-to-image-2.jpg"
+                src="/insta-img-7.jpg"
                 alt="Post Image"
                 className="w-16 h-16 rounded object-cover mr-4"
               />

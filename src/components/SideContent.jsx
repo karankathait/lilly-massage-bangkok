@@ -10,6 +10,7 @@ const SideContent = () => {
     "/insta-img-6.jpg",
     "/insta-img-7.jpg",
     "/insta-img-8.jpg",
+    "/insta-img-9.jpg",
   ];
 
   const posts = [
@@ -66,7 +67,7 @@ const SideContent = () => {
 
       <div className="shadow-lg border p-6 text-center mb-8">
         <h3 className="uppercase text-sm text-gray-500 mb-4">Instagram</h3>
-        <div className="grid grid-cols-2 gap-2 mb-4">
+        <div className="grid grid-cols-3 gap-2 mb-4">
           {images.map((image, index) => (
             <img
               key={index}
