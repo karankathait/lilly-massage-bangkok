@@ -10,7 +10,7 @@ const OurHistory = () => {
           </h2>
           <div className="roboto-condensed-font text-slate-800 dark:text-slate-200 md:pr-10 text-lg">
             <p className="mb-4">
-              Founded in 2010, Lilly Massage set out to provide exceptional
+              Founded in 2010, Elegance Spa & Massage set out to provide exceptional
               massage therapy right to your doorstep. What began with a small,
               passionate team has evolved into a leading provider of home-based
               massage services, known for our personalized approach and quality.

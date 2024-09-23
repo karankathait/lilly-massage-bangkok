@@ -20,7 +20,7 @@ const WHyUs = () => {
             Why Us
           </h2>
           <p className="roboto-condensed-font text-slate-800 dark:text-slate-200 mb-6 md:text-lg">
-            At Lilly Massage, we offer a personalized and convenient massage
+            At Elegance Spa & Massage, we offer a personalized and convenient massage
             experience tailored to your unique needs. Our team of expert
             therapists brings years of experience to ensure you receive
             top-quality care right in the comfort of your home. We provide a

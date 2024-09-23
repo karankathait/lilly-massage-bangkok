@@ -14,7 +14,8 @@ const Footer = () => {
             {/* <FaSpa className="w-7 h-7"/> */}
             <img src="./web-icon.png" className="w-10" alt="" />
           </span>
-          <span>LILLY MASSAGE</span>
+          {/* <span>LILLY MASSAGE</span> */}
+          <span>Elegance Spa & Massage</span>
         </div>
           {/* <h2 className="text-2xl font-bold text-[#FF708F] dark:text-[#EFC481] ">
             Lilly Massage Bangkok.

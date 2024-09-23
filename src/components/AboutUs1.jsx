@@ -12,8 +12,11 @@ const AboutUs1 = () => {
             <span></span>
             About US
           </h3>
-          <h2 className="josefin-slab-font text-4xl text-slate-800 dark:text-white leading-normal">
+          {/* <h2 className="josefin-slab-font text-4xl text-slate-800 dark:text-white leading-normal">
             At Lilly Massage Bangkok
+          </h2> */}
+          <h2 className="josefin-slab-font text-4xl text-slate-800 dark:text-white leading-normal">
+            At Elegance Spa & Massage
           </h2>
           <p className="text-slate-700 dark:text-gray-300 text-lg mt-4 ">
             We offer exceptional service throughout the Bangkok area with a team

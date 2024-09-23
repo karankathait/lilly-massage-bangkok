@@ -20,7 +20,7 @@ const Header2 = ({ title, backgroundImageUrl }) => {
           <FaSpa className="text-[#FF708F] dark:text-[#EFC481] mx-auto text-2xl mb-2" />
 
           {/* Title */}
-          <h2 className="text-[#FF708F] dark:text-[#EFC481] text-2xl font-semibold">
+          <h2 className="josefin-slab-font text-[#FF708F] dark:text-[#EFC481] text-2xl font-semibold">
             {title}
           </h2>
         </div>

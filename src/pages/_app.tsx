@@ -29,7 +29,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:description" content="A brief description of your website for Twitter sharing." />
         <meta name="twitter:image" content="/images/twitter-image.jpg" />
         <meta name="twitter:url" content="https://yourwebsite.com" />
-        <title>Lily Massage Bangkok </title>
+        {/* <title>Lily Massage Bangkok </title> */}
+        <title>Elegance Spa & Massage</title>
       </Head>
       <Component {...pageProps} />
     </NextUIProvider>
