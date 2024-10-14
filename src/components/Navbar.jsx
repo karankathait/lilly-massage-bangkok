@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-12 dark:from-gray-800 dark:via-gray-900 dark:to-black dark:text-gray-200">
+      {/* <header className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-12 dark:from-gray-800 dark:via-gray-900 dark:to-black dark:text-gray-200">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight animate-pulse">
             Looking for a Skilled Freelancer?
@@ -44,10 +44,10 @@ const Navbar = () => {
             Contact Me Now
           </a>
         </div>
-      </header>
+      </header> */}
 
-      {/* <nav className="fixed top-0 left-0 z-50 w-full bg-white dark:bg-black shadow-md"> */}
-      <nav className="w-full bg-white dark:bg-black shadow-md">
+      <nav className="fixed top-0 left-0 z-50 w-full bg-white dark:bg-black shadow-md">
+      {/* <nav className="w-full bg-white dark:bg-black shadow-md"> */}
         <div className="max-w-6xl mx-auto h-20 flex items-center justify-between px-8 md:px-0">
           {/* Logo (left-aligned on mobile) */}
           <div className="josefin-slab-font text-2xl font-semibold text-[#FF708F] dark:text-[#DEB678] flex items-center gap-2">

@@ -49,7 +49,7 @@ const MassageSlider = () => {
       <div className="max-w-6xl mx-auto">
         <Slider ref={sliderRef} {...settings}>
           {massages.map((card, index) => (
-            <div key={index} className="p-3">
+            <div key={index} className="p-3 cursor-pointer">
               <div
                 style={{
                   backgroundImage: `url(${card.image})`, // Background image
